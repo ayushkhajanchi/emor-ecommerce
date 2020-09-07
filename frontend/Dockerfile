@@ -16,4 +16,4 @@ RUN npm run build --prod
 FROM nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist/frontend /usr/share/nginx/html
