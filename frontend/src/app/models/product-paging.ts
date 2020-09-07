@@ -1,4 +1,4 @@
-import { Product } from './Product';
+import { Product } from './product';
 
 export class ProductPaging {
     ProductList: Product[];

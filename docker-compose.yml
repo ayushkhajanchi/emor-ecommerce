@@ -1,0 +1,16 @@
+version: '3'
+
+services: 
+    db:
+        image: mysql:latest
+    backend:
+        image: ecommerce-backend:latest
+        depends_on: 
+            - db
+
+    frontend:
+        image: ecommerce:latest
+        build: "./frontend"
+        depends_on: 
+            - backend
+            - db
