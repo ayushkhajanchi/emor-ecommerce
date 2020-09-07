@@ -5,6 +5,7 @@ services:
         image: mysql:latest
     backend:
         image: ecommerce-backend:latest
+        build: "./backend"
         depends_on: 
             - db
 
