@@ -5,13 +5,19 @@ services:
         image: mysql:latest
         environment: 
             MYSQL_ROOT_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: password
         volumes: 
             - ./database:/var/lib/mysql
+        ports: 
+            - 3306:3306
+            - 3360:3360
     backend:
         image: ecommerce-backend:latest
         build: "./backend"
         depends_on: 
             - db
+        ports: 
+            - 8080:8080
 
     frontend:
         image: ecommerce:latest
