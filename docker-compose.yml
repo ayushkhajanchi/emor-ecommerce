@@ -5,6 +5,8 @@ services:
         image: mysql:latest
         environment: 
             MYSQL_ROOT_PASSWORD: password
+        volumes: 
+            - "./database":.
     backend:
         image: ecommerce-backend:latest
         build: "./backend"
