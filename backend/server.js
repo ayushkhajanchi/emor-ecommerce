@@ -17,6 +17,7 @@ const db_config = {
     user: 'root', // your database username
     password: 'password', // your database password
     database: 'test',  // FYI export the tshirtshop.sql to this database
+    insecureAuth : true,
     multipleStatements: true
 }
 
