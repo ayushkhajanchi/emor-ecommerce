@@ -6,7 +6,7 @@ services:
         environment: 
             MYSQL_ROOT_PASSWORD: password
         volumes: 
-            - "./database:/"
+            - ./database:/var/lib/mysql
     backend:
         image: ecommerce-backend:latest
         build: "./backend"
