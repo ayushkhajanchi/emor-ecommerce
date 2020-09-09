@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'frontend';
   constructor(){
-    const serverURL = 'http://localhost:8080/api/';
+    const serverURL = 'http://34.121.236.166:8080/api/';
     localStorage.setItem('ServerUrl', serverURL);
   }
 }
