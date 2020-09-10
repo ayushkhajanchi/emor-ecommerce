@@ -5,12 +5,12 @@ services:
         image: ayushkhajanchi/emor-ecommerce_db:latest
         environment: 
             MYSQL_ROOT_PASSWORD: password
-            MYSQL_ROOT_PASSWORD: password
+            
         # volumes: 
         #     - ./database:/var/lib/mysql
         ports: 
             - 3306:3306
-            - 3360:3360
+            - 33060:33060
     backend:
         image: ayushkhajanchi/ecommerce-backend:latest
         # build: "./backend"
